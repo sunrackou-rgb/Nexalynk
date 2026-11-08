@@ -1,4 +1,3 @@
-$readme = @"
 # ⚡ Nexalynk Framework
 
 ## Executive Overview
@@ -16,13 +15,6 @@ The system operates via four decoupled autonomous units coordinated through reso
 - **Kernel:** Hybrid Python core with spatial signal processing algorithms (`lab/test/wave_chamber.py`, `lab/test/benchmark_hybrid.py`).
 - **Telemetry & State Retention:** Timezone-aware JSONL event-logging architecture (`core/memory/logger.py`).
 - **Communication Protocol:** Low-latency WebSockets / C2 message broker for multi-agent synchronization.
-"@
-
-Set-Content -Path "README.md" -Value $readme -Encoding utf8
-
-git add README.md
-git commit -m "docs: update README with executive overview and core architecture"
-git push origin main
 
 ## 🚀 Quick Start & Testing
 
