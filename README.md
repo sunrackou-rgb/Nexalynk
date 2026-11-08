@@ -23,3 +23,21 @@ Set-Content -Path "README.md" -Value $readme -Encoding utf8
 git add README.md
 git commit -m "docs: update README with executive overview and core architecture"
 git push origin main
+
+## 🚀 Quick Start & Testing
+
+Clone the repository and run the local verification scripts:
+
+```powershell
+# Clone the repository
+git clone [https://github.com/sunrackou-rgb/Nexalynk.git](https://github.com/sunrackou-rgb/Nexalynk.git)
+cd Nexalynk
+
+# Run the wave chamber simulation
+python lab/test/wave_chamber.py
+
+# Execute performance benchmarks
+python lab/test/benchmark_hybrid.py
+
+# Test the multi-agent telemetry logger
+python core/memory/logger.py
